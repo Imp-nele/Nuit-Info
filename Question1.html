@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thème 2 - Chapitre 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress_item">
+        <div class="progress_item">
+            <div class="progress_bar">
+              <div class="bar" data-value="10"  ></div>
+            </div>
+        </div>
+    </div>
+    <div  class="points" id="pts"></div>
+
+    <div class="bubblequestion" >
+        <h2>
+            Question 1
+        </h2> 
+    </div>
+
+
+  <div class="questions">
+
+    <div class="question" data-correct="true">
+        <p>Les ampoules LED sont plus efficaces énergetiquement que les ampoules
+            fluocompactes.</p>
+      <label>
+        <input type="radio" name="question1" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="question1" value="false"> Faux
+      </label>
+      <div class="feedback"></div>
+    </div>
+    <button id="validateBtn">Valider</button>
+
+  </div>
+  <!-- Ajout de l'élément pour la description -->
+  <div class="description-container">
+    <div class="description" style="display: none;">
+        Les LED sont plus efficaces énergetiquement et ont une durée de vie plus
+        longue que les fluocompactes.
+    </div>
+  </div>
+  
+  <div class="solution" id="solution"></div>
+
+
+  <div class="arrow-container">
+    <a href="Question2.html" class="arrowlink" style="display: none" >
+      <span class="arrow" ;></span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

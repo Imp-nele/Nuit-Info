@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thème 2 - Chapitre 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress_item">
+        <div class="progress_item">
+            <div class="progress_bar">
+              <div class="bar" data-value="99"  ></div>
+            </div>
+        </div>
+    </div>
+    <div  class="points" id="pts"></div>
+
+    <div class="bubblequestion" >
+        <h2>
+            Question 10
+        </h2> 
+    </div>
+
+
+  <div class="questions">
+
+    <div class="question" data-correct="false">
+        <p>Les activités humaines n'ont pas de lien avec l'augmentation des
+            catastrophes naturelles.</p>
+      <label>
+        <input type="radio" name="question1" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="question1" value="false"> Faux
+      </label>
+      <div class="feedback"></div>
+    </div>
+    <button id="validateBtn">Valider</button>
+
+  </div>
+  <!-- Ajout de l'élément pour la description -->
+  <div class="description-container">
+    <div class="description" style="display: none;">
+        Les actions humaines comme le changement climatique dû aux émissions
+de gaz à effet de serre ou la déforestation peuvent aggraver les catastrophes
+naturelles telles que les tempêtes, les inondations et les glissements de
+terrain. L'urbanisation dans des zones à risque rend également certaines
+régions plus vulnérables à ces événements.
+    </div>
+  </div>
+  
+  <div class="solution" id="solution"></div>
+
+
+  <div class="arrow-container">
+    <a href="Question10.html" class="arrowlink" style="display: none" >
+      <span class="arrow" ;></span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

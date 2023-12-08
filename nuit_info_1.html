@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Ecosavoir</title>
+    <!-- Ajout de Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="points" id="pts"> pts</div>
+        <h1 class="text-center mt-5">EcoSavoir</h1>
+        <h2 class="text-center mt-5">Bienvenue sur le menu </h2>
+        <div class="bubble"> 
+            <b>Attention !</b> <br>
+            Une fois le lien ouvert, vous ne pourrez plus y accéder une nouvelle fois. Si vous n'avez pas validé votre réponse, elle sera considérée comme fausse.
+        </div>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Questions</th>
+                    <th scope="col">Liens</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Question 1</td>
+                    <td><a href="Question1.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 2</td>
+                    <td><a href="Question2.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 3</td>
+                    <td><a href="Question3.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 4</td>
+                    <td><a href="Question4.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 5</td>
+                    <td><a href="Question5.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 6</td>
+                    <td><a href="Question6.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 7</td>
+                    <td><a href="Question7.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 8</td>
+                    <td><a href=Question8.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 9</td>
+                    <td><a href="Question9.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <tr>
+                    <td>Question 10</td>
+                    <td><a href="Question10.html" class="btn btn-success button-link">Accéder</a></td>
+                </tr>
+                <!--<tr>
+                    <th scope="row">4</th>
+                    <td>Charlie</td>
+                    <td><a href="charlie.html" class="btn btn-danger button-link">Je suis là</a></td>
+                </tr>-->
+            </tbody>
+        </table>
+    </div>
+    
+
+    <!-- Ajout de jQuery et Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Ajout de code JavaScript personnalisé -->
+    <script>
+        $(document).ready(function(){
+            $('.button-link').on('click', function(){
+                $(this).closest('td').html('Vous avez déjà répondu à la question');
+            });
+        });
+    </script>
+</body>
+</html>

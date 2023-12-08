@@ -1,0 +1,221 @@
+p {
+  font-size: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #086846;
+}
+
+.bubble {
+  position: relative;
+  background-color: rgb(241, 153, 153);
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+body {
+  background-image: url("url-of-your-image");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.progress {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items:  left ;
+    justify-content: top;
+  }
+
+
+  
+  .progress_item {
+    padding: 0.5rem 0;
+    margin-left : 16px ; 
+  }
+  
+  .progress_bar {
+    position: absolute;
+    width: 300px;
+    height: 11px;
+    border-radius: 32px;
+    background: rgb(3, 60, 41);
+  }
+  
+  .bar {
+    border-radius: inherit;
+    background: linear-gradient(90deg, #029f46, #4de979, #9df7c1);
+    position: absolute;
+    transition: width 1s cubic-bezier(0.1, 0.42, 0.85, 1);
+    width:  0%;
+    height: 65%;
+    left: 0;
+    top : 2px;
+  }
+  .points {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    padding: 13px 70px;
+    background-color: #06692ca4;
+    color: #f1f7f2;
+    font-size: 30px;
+    border-radius: 15px;
+    font-weight: bold; 
+  }
+
+  .questions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .question {
+    padding: 20px;
+    margin: 20px auto; /* Ajustez les marges haut et bas */
+    background-color: #fefefe94;
+    border-radius: 3%;
+}
+  
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0e5c0a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .bubblequestion {
+    font-family: 'Bungee';
+    position: relative;
+    color: #fff;
+    background-color: rgb(43, 162, 71);
+    border-radius: 10px;
+    width: 600px;
+    height: 60px; /* Ajustez la hauteur selon vos préférences */
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5; /* Ajustez selon vos préférences */
+}
+
+.solution {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out; /* Ajout de la transition de l'opacité */
+    opacity: 0; /* Définir l'opacité initiale à 0 pour cacher la solution */
+}
+
+.solution.show {
+    opacity: 1; /* Lorsque la classe show est ajoutée, l'opacité est définie à 1 pour afficher la solution */
+}
+
+.description{
+
+  font-size: 28px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+
+.description-container {
+  width: 900px; /* Ajustez la largeur selon vos préférences */
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.description.correct {
+  background-color: #bad6ba;
+}
+
+.description.incorrect {
+  background-color: #ffaaaa;
+}
+
+
+.arrow {
+  border: solid rgb(72, 232, 141);
+  border-width: 3px 3px 0 0;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(45deg);
+}
+
+.arrowlink {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #0b4d27;
+  border-radius: 50%;
+  color: #ea11a8f6;
+  text-decoration: none;
+}
+
+
+.Accueil {
+  font-family: Arial, sans-serif;
+  /*  background-color: #f1f1f1;*/
+  background-image: url("https://i.ibb.co/b5MnZYK/environmental-protection-326923-1280.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.bubbleChap {
+  font-family: "Bungee";
+  font-size: 30px;
+  position: relative;
+  /*background-color: rgba(234, 255, 41, 0.943);
+  border-radius: 20px;*/
+  width: 700px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  color: white;
+}
+
+.play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: rgba(0, 64, 255, 0.651);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 20px;
+  width: 180px;
+  height: 50px;
+  margin-left: 44.5%;
+  margin-right: auto;
+  margin-top: 450px;
+}
+
+.play-button:hover {
+  background-color: rgba(0, 64, 255, 0.651);
+  width: 200px;
+  height: 100px;
+  margin-left: 44%;
+  margin-top: 460px;
+}

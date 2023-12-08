@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thème 2 - Chapitre 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="progress_item">
+        <div class="progress_item">
+            <div class="progress_bar">
+              <div class="bar" data-value="40"  ></div>
+            </div>
+        </div>
+    </div>
+    <div  class="points" id="pts"></div>
+
+    <div class="bubblequestion" >
+        <h2>
+            Question 4
+        </h2> 
+    </div>
+
+
+  <div class="questions">
+
+    <div class="question" data-correct="false">
+        <p>Les voitures électriques produisent zéro émission de carbone.</p>
+      <label>
+        <input type="radio" name="question1" value="true"> Vrai
+      </label>
+      <label>
+        <input type="radio" name="question1" value="false"> Faux
+      </label>
+      <div class="feedback"></div>
+    </div>
+    <button id="validateBtn">Valider</button>
+
+  </div>
+  <!-- Ajout de l'élément pour la description -->
+  <div class="description-container">
+    <div class="description" style="display: none;">
+        Les voitures électriques produisent zéro émission de carbone au niveau
+local lorsqu'elles roulent, mais l'empreinte carbone totale dépend de la
+manière dont l'électricité est produite, avec des émissions indirectes liées à
+la production de l'énergie électrique.
+    </div>
+  </div>
+  
+  <div class="solution" id="solution"></div>
+
+
+  <div class="arrow-container">
+    <a href="Question5.html" class="arrowlink" style="display: none" >
+      <span class="arrow" ;></span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
